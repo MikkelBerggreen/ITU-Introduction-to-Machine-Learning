@@ -1,8 +1,4 @@
 # IAML material
-<br/>
-<p align="center"><img src="https://www.dropbox.com/s/b7d9mqmey5mzahg/logo.svg?raw=1" width=120 /></p>
-<br/>
-
 This repository contains the relevant material for solving the exercises and assignments in the IAML course. 
 The repository is regularly updated with new content and possibly changes (important changes will be announced). 
 Exercise solutions will also be uploaded here approximately one week after the week of a given exercise.
