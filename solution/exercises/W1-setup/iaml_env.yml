@@ -28,7 +28,7 @@ dependencies:
   - nodejs
   - pip
   - pip:
-    - torch=1.7
+    - torch
     - torchvision
     - opencv-python
     - imutils
