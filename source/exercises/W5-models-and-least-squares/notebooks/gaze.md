@@ -14,7 +14,7 @@ kernelspec:
 +++ {"tags": []}
 
 # <i class="fas fa-circle mandatory"></i> Gaze estimation
-<span class="badge badge-pill badge-danger">mandatory</span>
+<span class="badge badge-pill badge-danger">mandatory</span><span class="badge badge-pill badge-dark">notebook</span>
 
 
 ```{tableofcontents}
@@ -39,7 +39,7 @@ The following list is a summary of the tasks you need to complete to pass the ex
 
 In this exercise you will implement a regression model to estimate where a person is looking (this is known as *gaze*). Gaze estimation is performed by capturing images of a users eye as shown in FIG and mapping them to screen positions. Humans look at things by orienting their eyes so that the point of focus is directly in line with a point on their retinas known as the *fovea* (shown in {numref}`fig-model`). Therefore, the pupil position can be used to infer gaze. 
 
-```{info}
+```{note}
 The *fovea* is located slightly differently from person to person ($\pm$ 5 degrees) and as a consequence, a gaze model has to be retrained for every person using it. This difference is shown in {numref}`fig-kappa`.
 ```
 
