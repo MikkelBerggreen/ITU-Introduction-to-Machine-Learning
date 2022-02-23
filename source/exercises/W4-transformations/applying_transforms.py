@@ -47,6 +47,8 @@ def load_or_create_affine(video, image_map):
         # Exercise
         points_source = Counter(image_ground, "Ground points").get_points(3)
         points_destination = Counter(image_map, "Map points").get_points(3)
+        # Replace this with your solution
+        Hgm = None
 
         video.set(cv2.CAP_PROP_POS_FRAMES, 0)
 
