@@ -16,10 +16,6 @@ kernelspec:
 # <i class="fas fa-circle mandatory"></i> Gaze estimation
 <span class="badge badge-pill badge-danger">mandatory</span><span class="badge badge-pill badge-dark">notebook</span>
 
-
-```{tableofcontents}
-```
-
 This is the first mandatory exercise which means you will have to hand in this Jupyter Notebook with your implementation and notes. This exercise is split into multiple parts which have to be submitted together. The submission deadline is available on LearnIT.
 
 ## Tasks
@@ -91,10 +87,6 @@ in `inputs/images`) are divided into two groups:
 - **Head movement and rotation:** `movement_medium`, `movement_hard`,
 
 You may want to focus on the ones without head movement for now.
-
-Use the provided script `position_viz.py` to visualise the image and corresponding screen
-point. It has one command-line argument which is the subfolder (in `inputs/images/`) to
-use, e.g. `python position_viz.py pattern1`.
 
 ```{code-cell} ipython3
 :tags: [remove-cell]
@@ -219,7 +211,7 @@ def show_example_features(images, pupils):
 ## <i class="fas fa-exclamation-circle mandatory"></i> Data and visualization
 First you will familiarise yourself with the problem domain and data sources by doing a number of visualisations. 
 
-The code below loads all the datasets specified in `dataset_folders` and predicts features for each image. The `show_example_features` function then plots a grid of all the images from one of the datasets. 
+The code below loads all the datasets specified in `inputs` and predicts features for each image. The `show_example_features` function then plots a grid of all the images from one of the datasets. 
 
 **A): <i class="fas fa-code"></i>** Test the visualisation for different datasets (by changing the array index when accessing images, positions, or pupils).
 
