@@ -22,6 +22,7 @@ dependencies:
   # Jupyter
   - jupyter
   - jupyterlab=3
+  - jupytext
   - ipywidgets
   - qgrid
   # Node
