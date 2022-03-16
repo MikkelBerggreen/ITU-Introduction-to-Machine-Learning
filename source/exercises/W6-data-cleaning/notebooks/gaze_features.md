@@ -228,6 +228,10 @@ images_test = [li[9:] for li in images]
 ```
 
 ```{code-cell} ipython3
+def gaze_error(idx, order=2):
+    ...
+    
+print(gaze_error(0, 1), gaze_error(0, 2))
 ```
 
 +++ {"tags": []}

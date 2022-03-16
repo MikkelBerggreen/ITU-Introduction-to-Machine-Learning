@@ -183,7 +183,7 @@ $$
 This number will always be between $0$ and $1$ because the rotated rectangle produced always encompasses all white pixels in the contour.
 
 - Implement the ratio calculation in the `contour_ratio` function.
-- Use `cv.minAreaRect` and `cv.contourArea` to calculate the ratio in the `contour_score` function and return the result.
+- Use `cv.minAreaRect` and `cv.contourArea` to calculate the ratio in the `contour_ratio` function and return the result.
 
 ```{tip}
 The rectangle returned from `cv.minAreaRect` can be destructured as follows: `center, axes, angle = cv.minAreaRect(contour)`. This is not clear from the C++ docs.
@@ -191,7 +191,7 @@ The rectangle returned from `cv.minAreaRect` can be destructured as follows: `ce
 
 This metric can be used to classify BLOBS as being either a barcode or not by testing the value against a threshold. Do the following:
 
-- Implement the classification in `classify_contours` function.
+- Implement the classification in `classify_contours` function. Use the `threshold` argument to determine which contours are pupils.
 - Classify the image contours and save the result in a list.
 - Use the utility function `show_contours` (code shown in the cell below) to draw the possitively classified contours.
 

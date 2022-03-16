@@ -13,9 +13,9 @@ kernelspec:
 
 +++ {"tags": []}
 
-# <i class="fas fa-circle mandatory"></i> Gaze estimation
+# {{ mandatory }} Gaze estimation
 <span class="badge badge-pill badge-danger">mandatory</span><span class="badge badge-pill badge-dark">notebook</span>
-
+{{ mandatory }}
 This is the first mandatory exercise which means you will have to hand in this Jupyter Notebook with your implementation and notes. This exercise is split into multiple parts which have to be submitted together. The submission deadline is available on LearnIT.
 
 ## Tasks
@@ -288,7 +288,7 @@ $$
 
 The principle is demonstrated in {numref}`fig-gaze` to the right. Here, the $x$ coordinate of the pupil maps to the $x$ coordinate on the screen. In the real model, we use both $x$ and $y$ as inputs to both the model estimating the $x$ position on the screen and the model estimating the $y$ position.
 
-**B): <i class="fas fa-code"></i>** **Implement the design matrix:** Implement a function for generating a design matrix from pupil positions and a function for calculating the linear function given a parameter vector and an input vector. For reference, the linear model has the form $f(x; \theta)=\theta_0 x_0 + \theta_1 x_1 + \theta_2$
+**B): <i class="fas fa-code"></i>** **Implement the design matrix:** Implement a function for generating a design matrix from pupil positions.
 
 **C): <i class="fas fa-code"></i>** **Calibration:** Learn the parameters $\theta$ for the linear regression using the `pupils_train` and `positions_train` lists (remember to select one of the datasets in the lists). Create a design matrix from the pupil positions. Use *two* linear models, as described above, one to learn the X-coordinates and one to learn the Y-coordinates. 
 
@@ -296,7 +296,7 @@ The principle is demonstrated in {numref}`fig-gaze` to the right. Here, the $x$ 
 This is possibly the most difficult part of the exercise. Try to use what you learned in the two non-mandatory exercises and apply it here. Remember that you need to fit two separate models, one for each screen coordinate.
 ```
 
-**D): <i class="fas fa-code"></i>** **Estimation:** Implement a function which predicts the gaze given a pupil position using the learned model. Then calculate and return the estimated screen coordinates using the models created during calibration.
+**D): <i class="fas fa-code"></i>** **Estimation:** Implement a function which predicts the gaze point given a pupil position using the learned models. For reference, the linear model has the form $f(x; \theta)=\theta_0 x_0 + \theta_1 x_1 + \theta_2$. You may calculate the point for each coordinate seperately. Then calculate and return the estimated screen coordinates using the models created during calibration.
 
 ```{code-cell} ipython3
 :tags: [remove-cell]
@@ -312,14 +312,14 @@ This is possibly the most difficult part of the exercise. Try to use what you le
 
 +++ {"tags": []}
 
-**A): <i class="fas fa-code"></i>** **Calculate mean squared error:** For each dataset, predict gaze positions and calculate the *mean squarred error* between the true values in `positions_test` and the predictions. Additionally:
+**A): <i class="fas fa-code"></i>** **Calculate errors:** For each dataset, predict gaze positions and calculate the *mean squarred error* between the true values in `positions_test` and the predictions (one MSE for each coordinate). Additionally:
 - Calculate the square root of the *mse* for each dataset.
-- Calculate the covariance of the *mse* for $x$ and $y$ for each dataset. 
-- <i class="fas fa-pen"></i> What does the covariance tell you of the error for each coordinate?
 
 **B): <i class="fas fa-code"></i>** **Calculate distance errors:**
 - Calculate the euclidean distance between each predicted point and ground truth screen position. 
 - Calculate the mean and variance of the distance error for each dataset. 
+- Calculate the distance error for $x$ and $y$ seperately (this is just the absolute value of the error). Then calculate the correlation for the $x$ and $y$ errors for each dataset.
+- <i class="fas fa-pen"></i> What does the correlation tell you of the error for each coordinate?
 - Visualise the results using a suitable choice of plots (only include plots you think show something valuable about the results).
 - <i class="fas fa-pen"></i> Explain why the distance metric is useful for this particular model.
 
