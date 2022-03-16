@@ -13,21 +13,20 @@ kernelspec:
 
 +++ {"tags": []}
 
-# {{ mandatory }} Gaze estimation
-<span class="badge badge-pill badge-danger">mandatory</span><span class="badge badge-pill badge-dark">notebook</span>
-{{ mandatory }}
+# <i class="fas fa-circle" style="color: #d9534f;"></i> Gaze estimation
+<span style="background-color: #d9534f; color: white; border-radius: 10px; padding-top: 2px; padding-bottom: 2px; padding-left: 6px;padding-right: 6px;">mandatory</span> <span style="background-color: #343A40; color: white; border-radius: 10px; padding-top: 2px; padding-bottom: 2px; padding-left: 6px;padding-right: 6px;">notebook</span>
 This is the first mandatory exercise which means you will have to hand in this Jupyter Notebook with your implementation and notes. This exercise is split into multiple parts which have to be submitted together. The submission deadline is available on LearnIT.
 
 ## Tasks
 The following list is a summary of the tasks you need to complete to pass the exercise. Find the tasks in the exercise text with further instructions on what to do. 
 
-<i class="fas fa-exclamation-circle mandatory"></i> {ref}`gaze:viz` (**A-B**)
+<i class="fas fa-exclamation-circle" style="color: #d9534f;"></i> {ref}`gaze:viz` (**A-B**)
 
-<i class="fas fa-exclamation-circle mandatory"></i> {ref}`gaze:implement` (**A-D**)
+<i class="fas fa-exclamation-circle" style="color: #d9534f;"></i> {ref}`gaze:implement` (**A-D**)
 
-<i class="fas fa-exclamation-circle mandatory"></i> {ref}`gaze:evaluation` (**A-D**)
+<i class="fas fa-exclamation-circle" style="color: #d9534f;"></i> {ref}`gaze:evaluation` (**A-D**)
 
-<i class="fas fa-exclamation-circle mandatory"></i> {ref}`gaze:improve` (**A-C**)
+<i class="fas fa-exclamation-circle" style="color: #d9534f;"></i> {ref}`gaze:improve` (**A-C**)
 
 
 
