@@ -1,1 +1,0 @@
-These files are copied from "https://github.com/zalandoresearch/fashion-mnist" (MIT License).

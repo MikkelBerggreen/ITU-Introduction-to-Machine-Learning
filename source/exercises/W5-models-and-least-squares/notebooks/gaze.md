@@ -236,6 +236,26 @@ images_train = [li[:9] for li in images]
 images_test = [li[9:] for li in images]
 ```
 
+```{admonition} Details about the data format
+:class: tip, dropdown
+The dataframes each contain a number of columns. Here's a description of what data each column contains.
+
+**Pupil dataframes:**
+| Name | Meaning |
+| ---- | ------- |
+| `cx` | Center $x$-coordinate |
+| `cy` | Center $y$-coordinate |
+| `ax` | Radius 1 |
+| `ay` | Radius 2 |
+| `angle` | Angle |
+
+**Position dataframes**
+| Name | Meaning |
+| ---- | ------- |
+| `x` | $x$-coordinate |
+| `y` | $y$-coordinate |
+```
+
 ```{code-cell} ipython3
 show_example_features(images_train[0], pupils_train[0])
 ```
@@ -246,7 +266,11 @@ Lets visualize the recorded screen gaze positions. The subject was instructed to
 sns.scatterplot(x='x', y='y', data=positions_test[0]);
 ```
 
-**B): <i class="fas fa-code"></i>** Test the visualisation for different datasets (by changing the array index when accessing images, positions, or pupils). Do the same but for the detected pupil positions. We provide the `DataFrame` object for each so you should be able to simply modify the example above
+**B): <i class="fas fa-code"></i>** Test the visualisation for different datasets (by changing the array index when accessing images, positions, or pupils). Do the same but for the detected pupil positions. We provide the `DataFrame` object for each so you should be able to simply modify the example above.
+
+
+
+
 
 ```{code-cell} ipython3
 pupils[0].head()
@@ -366,7 +390,7 @@ $$(dmat)
 **B): <i class="fas fa-code"></i>** **Evaluate:** Calculate the *rmse* and distance errors as before and compare the two. Visualise errors like you did for the linear model.
 
 **C):** **Compare with linear results:**
-- <i class="fas fa-code"></i> Repeat the evaluation steps for the linear model, i.e. calculate the same metrics and plots. Try to combine the plots for both models to make comparisons easier.
+- {{ task-impl }} Repeat the evaluation steps for the linear model, i.e. calculate the same metrics and plots. Try to combine the plots for both models to make comparisons easier.
 - <i class="fas fa-pen"></i> Use distance means and variance to compare the performance of the linear and quadratic models.
 - <i class="fas fa-pen"></i> Which model is best in certain situations and why? Relate this to your knowledge of the problem domain (gaze estimation) and the general problem of choosing model complexity.
 
