@@ -6,9 +6,9 @@ jupytext:
     format_version: 0.13
     jupytext_version: 1.11.5
 kernelspec:
-  display_name: 'Python 3.8.12 64-bit (''main'': conda)'
+  display_name: Python 3 (ipykernel)
   language: python
-  name: python3812jvsc74a57bd057fb28ac720e6b386f7e8c4333d520d61b934d1461e270749c345e398e01b3f0
+  name: python3
 ---
 
 # <i class="fas fa-circle exercise"></i> Preprocessing and cleaning

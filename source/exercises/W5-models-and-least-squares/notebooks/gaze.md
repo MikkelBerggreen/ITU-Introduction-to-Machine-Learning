@@ -6,9 +6,9 @@ jupytext:
     format_version: 0.13
     jupytext_version: 1.11.5
 kernelspec:
-  display_name: 'Python 3.8.12 64-bit (''main'': conda)'
+  display_name: Python 3 (ipykernel)
   language: python
-  name: python3812jvsc74a57bd057fb28ac720e6b386f7e8c4333d520d61b934d1461e270749c345e398e01b3f0
+  name: python3
 ---
 
 +++ {"tags": []}
@@ -268,10 +268,6 @@ sns.scatterplot(x='x', y='y', data=positions_test[0]);
 
 **B): <i class="fas fa-code"></i>** Test the visualisation for different datasets (by changing the array index when accessing images, positions, or pupils). Do the same but for the detected pupil positions. We provide the `DataFrame` object for each so you should be able to simply modify the example above.
 
-
-
-
-
 ```{code-cell} ipython3
 pupils[0].head()
 # Write the plotting code here (using Seaborn is easier, but feel free to use Matplotlib as well)
@@ -331,6 +327,10 @@ This is possibly the most difficult part of the exercise. Try to use what you le
 ## <i class="fas fa-exclamation-circle mandatory"></i> Evaluation of the regression model
 
 ```{code-cell} ipython3
+```
+
+```{code-cell} ipython3
+
 ```
 
 +++ {"tags": []}
@@ -393,6 +393,10 @@ $$(dmat)
 - {{ task-impl }} Repeat the evaluation steps for the linear model, i.e. calculate the same metrics and plots. Try to combine the plots for both models to make comparisons easier.
 - <i class="fas fa-pen"></i> Use distance means and variance to compare the performance of the linear and quadratic models.
 - <i class="fas fa-pen"></i> Which model is best in certain situations and why? Relate this to your knowledge of the problem domain (gaze estimation) and the general problem of choosing model complexity.
+
+```{code-cell} ipython3
+
+```
 
 ```{code-cell} ipython3
 :tags: [remove-cell]
