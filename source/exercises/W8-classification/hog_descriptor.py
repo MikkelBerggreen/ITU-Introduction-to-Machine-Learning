@@ -10,9 +10,6 @@ from matplotlib.widgets import Slider
 from skimage import feature
 
 
-
-
-
 # matplotlib.use("tkagg")
 # Global variables.
 pressed = False
