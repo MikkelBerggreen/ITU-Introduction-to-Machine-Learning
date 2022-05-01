@@ -52,7 +52,7 @@ where
 $x\in\mathbb{R}^M$ is the input vector and $y\in\mathbb{R}^K$ is the
 embedded vector. As shown in the second equation, it is possible to reconstruct $x$ with some amount of error $\epsilon$. To find $\Phi$, we use the _eigenvectors_ of the covariance matrix of our data matrix $W$ where each row $i$ is a sample $x_i \in \mathbb{R}^M$. The eigenvectors are sorted by their associated eigenvalues which represent the variance of each dimension in latent space. Selecting the $k$ first columns (we use the notation $\Phi_{:k}$) results in a transformation that reduces the dimensionality of the latent space to $k$ dimensions. 
 
-1.  <i class="fas fa-code"></i> **Setup:** Create a script file or notebook for this exercise. In it, start by loading the face shapes and images using `dset.face_shapes_data`.
+1.  <i class="fas fa-code"></i> **Setup:** Create a script file or notebook for this exercise. In it, start by loading the face shapes and images using `utils.face_shape_data`.
 
 2.  <i class="fas fa-code"></i> **Implement PCA:** Create a function that calculates and returns the
     principle components of the shapes dataset. Use the method described
@@ -163,4 +163,8 @@ proportion.
 
 ```{code-cell} ipython3
 # Write your implementation here.
+```
+
+```{code-cell} ipython3
+
 ```

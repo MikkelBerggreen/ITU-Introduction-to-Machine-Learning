@@ -100,6 +100,8 @@ D):
 
 ```{code-cell} ipython3
 # Implementation for C)
+vectors[:, :5]
+
 # Write your solution here
 ```
 
