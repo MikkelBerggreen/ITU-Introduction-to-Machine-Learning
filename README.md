@@ -11,7 +11,7 @@ You may use the following guide to create your own fork of this repository, clon
 1. Fork the repository to your own account using the button on Github.
 2. Clone the forked repository to your computer with the command `git clone git@github.itu.dk:<user>/material.git` where `<user>` is your username (ITU initials).
 3. Navigate to the newly cloned repository.
-4. Add the original repository as a remote using the following command `git remote add upstream git@github.itu.dk:IAML/material.git`. 
+4. Add the original repository as a remote using the following command `git remote add upstream git@github.itu.dk:IAML/material-fall-2022.git`. 
 
 This process results in your local repository having two remotes: `origin` and `upstream`. Whenever you want to push changes to your own repository, use the `origin` remote.
 
