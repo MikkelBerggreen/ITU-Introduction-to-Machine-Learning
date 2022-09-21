@@ -18,7 +18,7 @@ def main():
 
         draw_rectangles(image, data, i)
 
-        # Exercise 2.3
+        # Exercise 
 
         i += 1
 
