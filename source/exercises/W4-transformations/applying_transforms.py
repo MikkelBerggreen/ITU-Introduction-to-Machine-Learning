@@ -18,7 +18,7 @@ def main():
 
         draw_rectangles(image, data, i)
 
-        # Exercise 2.3
+        # Exercise 4.2.3.2 and 4.2.3.3
 
         i += 1
 
@@ -43,10 +43,10 @@ def load_or_create_affine(video, image_map):
         if not ret:
             raise IOError("Could not read frame from Video.")
 
-        # Exercise
+        # Exercise 4.2.2
         points_source = Counter(image_ground, "Ground points").get_points(3)
         points_destination = Counter(image_map, "Map points").get_points(3)
-        # Replace this with your solution
+        # Replace this with your solution 
         Hgm = None
 
         video.set(cv2.CAP_PROP_POS_FRAMES, 0)
@@ -54,7 +54,7 @@ def load_or_create_affine(video, image_map):
     return Hgm
 
 
-# Exercise
+# Exercise 4.2.3.1
 def apply_affine(t, point):
     """Apply affine transformation h to point."""
     return None # Replace
