@@ -1,0 +1,23 @@
+name: Projections
+spec: Tutorial
+number: 4
+
+book:
+  include-solution: false
+
+  book-files:
+    - Projection_tutorial.ipynb
+
+  notebook-files: 
+    - Projection_tutorial.ipynb
+
+  toc:
+    - file: <pre>/Projection_tutorial.ipynb
+
+includes:
+  - images/*
+
+code-files:
+  - Projection_tutorial.ipynb
+
+labels: []
