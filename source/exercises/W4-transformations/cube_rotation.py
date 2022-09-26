@@ -100,7 +100,28 @@ def get_3d_rotation_matrix(theta, axis=0):
     This function return a rotation matrix given an input theta angle in
     radians.
     """
-    ...
+    if axis == 0:
+        return np.array(
+            [[1, 0, 0],
+            [0, np.cos(theta), -np.sin(theta)],
+            [0, np.sin(theta), np.cos(theta)]],
+            dtype=np.float64,
+        )
+    elif axis == 1:
+        return np.array(
+            [[np.cos(theta), 0, np.sin(theta)],
+            [0, 1, 0],
+            [-np.sin(theta), 0, np.cos(theta)]],
+            dtype=np.float64,
+        )
+    elif axis == 2:
+        return np.array(
+            [[np.cos(theta), -np.sin(theta), 1],
+            [np.sin(theta), np.cos(theta), 0],
+            [0, 0, 1]],
+            dtype=np.float64,
+        )
+
 
 
 def reset_sliders(t):
