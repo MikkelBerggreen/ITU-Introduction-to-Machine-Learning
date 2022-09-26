@@ -1,0 +1,23 @@
+name: Transformations
+spec: Tutorial
+number: 2
+
+book:
+  include-solution: false
+
+  book-files:
+    - "Transformation Tutorial.ipynb"
+
+  notebook-files: 
+    - "Transformation Tutorial.ipynb"
+
+  toc:
+    - file: "<pre>/Transformation Tutorial.ipynb"
+
+includes:
+  - images/*
+
+code-files:
+  - "Transformation Tutorial.ipynb"
+
+labels: []
