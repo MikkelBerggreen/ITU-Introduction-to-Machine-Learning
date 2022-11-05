@@ -144,9 +144,12 @@ show_images(Baboon=image, Eye=template)
 # <!--------------------------------------------------------------------------->
 # <!--                            YOUR CODE HERE                             -->
 # <!--------------------------------------------------------------------------->
+H, W = image.shape[:2]
+matchMethod = cv2.TM_CCORR_NORMED
 
+templateResult = cv2.matchTemplate(image, template, ((W-w+1) * (H-h+1)), matchMethod)
 
-image_CR = image # replace this with the template result.
+image_CR = templateResult # replace this with the template result.
 
 # The image where I will draw the red rectangle.
 result = image.copy()
